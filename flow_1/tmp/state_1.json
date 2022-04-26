@@ -1,0 +1,9 @@
+{
+    "configuration": {
+        "host": "your.postgres-instance.host",
+        "port": "5432",
+        "database": "your_postgres_database",
+        "user": "postgres",
+        "password": "YourSuperSecretPostgresPassword123!"
+    }
+}
