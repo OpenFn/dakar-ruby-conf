@@ -1,0 +1,9 @@
+{
+    "configuration": {
+        "host": "localhost",
+        "port": "5432",
+        "database": "tr_analysis",
+        "user": "postgres",
+        "password": "+AnQ@tfqW_RdGE8j"
+    }
+}
