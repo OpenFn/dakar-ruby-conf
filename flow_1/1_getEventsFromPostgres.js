@@ -1,7 +1,4 @@
-sql(state => `SELECT * FROM events`, {
-  writeSql: true,
-  execute: true,
-});
+sql(state => `SELECT * FROM events`, { writeSql: true });
 
 fn(state => {
   console.log('This is the result of the SQL query', state.response.body.rows);
