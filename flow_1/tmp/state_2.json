@@ -1,7 +1,9 @@
 {
     "configuration": {
-        "username": "eliaswalyba",
-        "password": "wndALC2Juf1FFKJB",
-        "clusterUrl": "yourCluster-xxxyzzz.mongodb.net"
+        "host": "localhost",
+        "port": "3306",
+        "database": "events",
+        "user": "root",
+        "password": "Passer123"
     }
 }
