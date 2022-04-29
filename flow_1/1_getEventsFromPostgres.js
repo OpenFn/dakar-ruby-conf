@@ -9,15 +9,15 @@ fn(state => {
 });
 
 fn(state => {
-  const PGSQLEvents = state.response.body.rows;
-  const MySQLEvents = PGSQLEvents.map(event => ({
+  const postgresEvents = state.response.body.rows;
+  const mysqlEvents = postgresEvents.map(event => ({
     event_type: event.event_type,
     sub_event_type: event.sub_event_type,
     interaction: event.interaction,
     actor: event.actor1,
     locality: event.location,
   }));
-  return { ...state, PGSQLEvents, MySQLEvents };
+  return { ...state, postgresEvents, mysqlEvents };
 });
 
 // each('events[*]', interator => {
