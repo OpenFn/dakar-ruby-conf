@@ -2,13 +2,16 @@
 get('/posts');
 
 fn(state => {
+  // Pluck out what you need from state at the top.
+  const { data } = state;
+
   console.log(
     'This is what state.data look like after the get operation',
-    JSON.stringify(state.data, null, 2)
+    JSON.stringify(data, null, 2)
   );
 
   // Do whatever you want with the data here
-  const customPosts = state.data
+  const customPosts = data
     .filter(({ body }) => body.length > 15)
     .map(({ body }) => ({
       title: `The new title is '${body.slice(0, 10)}'.`,
